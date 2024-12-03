@@ -2,145 +2,184 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoinMarketCap Solana</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoinMarketCap Solana</title>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+  </style>
 </head>
 
 <body>
 
-    <header class="content-section">
-        <div class="fluid-container">
-            <div class="logo">wcoin</div>
-            <div class="menu">
-                <ul>
-                    <li>Cryptocurrencies</li>
-                    <li>New Pairs</li>
-                    <li>Portfolio</li>
-                </ul>
-            </div>
-            <div class="profile-dropdown">lorem</div>
+  <header class="content-section">
+    <div class="fluid-container">
+      <div class="logo"><img src="assets/media/WCOIN.svg" alt=""></div>
+      <div class="menu">
+        <ul>
+          <li>Cryptocurrencies</li>
+          <li>New Pairs</li>
+          <li>Portfolio</li>
+        </ul>
+      </div>
+      <div class="profile-dropdown">
+
+        <div class="profile-dropdown-btn" onclick="toggle()">
+
+          <div class="menu-bars"><i class="fa-solid fa-bars"></i></div>
+
+          <div class="profile-dropdown-image">
+
+            <span>5</span>
+          </div>
+
         </div>
-    </header>
 
-    <div class="main-content content-section">
-        <div class="fluid-container">
-            <div class="heading-cryptototal">
-                <h1>Today's Cryptocurrency Prices by Market Cap</h1>
-                <p>The global crypto market cap is $3.48T, a 1.11% increase over the last day. Read More</p>
-            </div>
-            <div class="tablecoins">
-                <table width="100%">
-                    <thead>
-                      <tr>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>1h %</th>
-                        <th>24h %</th>
-                        <th>7d %</th>
-                        <th>Market Cap</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Solana</td>
-                        <td>$224.10</td>
-                        <td>0.68%</td>
-                        <td>5.87 %</td>
-                        <td>4.58%</td>
-                        <td>106,381,335,994</td>
-                      </tr><tr>
-                        <td>Solana</td>
-                        <td>$224.10</td>
-                        <td>0.68%</td>
-                        <td>5.87 %</td>
-                        <td>4.58%</td>
-                        <td>106,381,335,994</td>
-                      </tr><tr>
-                        <td>Solana</td>
-                        <td>$224.10</td>
-                        <td>0.68%</td>
-                        <td>5.87 %</td>
-                        <td>4.58%</td>
-                        <td>106,381,335,994</td>
-                      </tr><tr>
-                        <td>Solana</td>
-                        <td>$224.10</td>
-                        <td>0.68%</td>
-                        <td>5.87 %</td>
-                        <td>4.58%</td>
-                        <td>106,381,335,994</td>
-                      </tr><tr>
-                        <td>Solana</td>
-                        <td>$224.10</td>
-                        <td>0.68%</td>
-                        <td>5.87 %</td>
-                        <td>4.58%</td>
-                        <td>106,381,335,994</td>
-                      </tr><tr>
-                        <td>Solana</td>
-                        <td>$224.10</td>
-                        <td>0.68%</td>
-                        <td>5.87 %</td>
-                        <td>4.58%</td>
-                        <td>106,381,335,994</td>
-                      </tr><tr>
-                        <td>Solana</td>
-                        <td>$224.10</td>
-                        <td>0.68%</td>
-                        <td>5.87 %</td>
-                        <td>4.58%</td>
-                        <td>106,381,335,994</td>
-                      </tr><tr>
-                        <td>Solana</td>
-                        <td>$224.10</td>
-                        <td>0.68%</td>
-                        <td>5.87 %</td>
-                        <td>4.58%</td>
-                        <td>106,381,335,994</td>
-                      </tr><tr>
-                        <td>Solana</td>
-                        <td>$224.10</td>
-                        <td>0.68%</td>
-                        <td>5.87 %</td>
-                        <td>4.58%</td>
-                        <td>106,381,335,994</td>
-                      </tr><tr>
-                        <td>Solana</td>
-                        <td>$224.10</td>
-                        <td>0.68%</td>
-                        <td>5.87 %</td>
-                        <td>4.58%</td>
-                        <td>106,381,335,994</td>
-                      </tr>
+        <ul class="profile-menu">
+          <li>
+            <a href="#"><i class="fa-solid fa-user"></i>Edit Profile</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-circle-info"></i>About wcoin</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a>
+          </li>
+        </ul>
 
-                    </tbody>
-                  </table>
-
-            </div>
-            <div class="table-footer">
-                <div class="rowscounter">Showing 1 - 100 out of 10283</div>
-                <div class="pagination">loremipsum</div>
-                <div class="rowsselector">Show rows</div>
-            </div>
-        </div>
+      </div>
     </div>
+  </header>
 
-    <div class="cta content-section">
-        <div class="fluid-container">
-            <div class="ctamsg">
-                <h3>Stay on top of crypto. All the time, any time.</h3>
-                <p>Please keep me updated by email with the latest crypto news, research findings, reward programs,
-                    event updates, coin listings and more information from CoinMarketCap.</p>
-            </div>
-            <div class="ctaimage">
-                <img src="coins.webp" alt="Icons of top coins">
-            </div>
-        </div>
+  <div class="main-content content-section">
+    <div class="fluid-container">
+      <div class="heading-cryptototal">
+        <h1>Today's Cryptocurrency Prices by Market Cap</h1>
+        <p>The global crypto market cap is $3.48T, a 1.11% increase over the last day. Read More</p>
+      </div>
+      <div class="tablecoins">
+        <table width="100%">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+              <th>1h %</th>
+              <th>24h %</th>
+              <th>7d %</th>
+              <th>Market Cap</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Solana</td>
+              <td>$224.10</td>
+              <td>0.68%</td>
+              <td>5.87 %</td>
+              <td>4.58%</td>
+              <td>106,381,335,994</td>
+            </tr>
+            <tr>
+              <td>Solana</td>
+              <td>$224.10</td>
+              <td>0.68%</td>
+              <td>5.87 %</td>
+              <td>4.58%</td>
+              <td>106,381,335,994</td>
+            </tr>
+            <tr>
+              <td>Solana</td>
+              <td>$224.10</td>
+              <td>0.68%</td>
+              <td>5.87 %</td>
+              <td>4.58%</td>
+              <td>106,381,335,994</td>
+            </tr>
+            <tr>
+              <td>Solana</td>
+              <td>$224.10</td>
+              <td>0.68%</td>
+              <td>5.87 %</td>
+              <td>4.58%</td>
+              <td>106,381,335,994</td>
+            </tr>
+            <tr>
+              <td>Solana</td>
+              <td>$224.10</td>
+              <td>0.68%</td>
+              <td>5.87 %</td>
+              <td>4.58%</td>
+              <td>106,381,335,994</td>
+            </tr>
+            <tr>
+              <td>Solana</td>
+              <td>$224.10</td>
+              <td>0.68%</td>
+              <td>5.87 %</td>
+              <td>4.58%</td>
+              <td>106,381,335,994</td>
+            </tr>
+            <tr>
+              <td>Solana</td>
+              <td>$224.10</td>
+              <td>0.68%</td>
+              <td>5.87 %</td>
+              <td>4.58%</td>
+              <td>106,381,335,994</td>
+            </tr>
+            <tr>
+              <td>Solana</td>
+              <td>$224.10</td>
+              <td>0.68%</td>
+              <td>5.87 %</td>
+              <td>4.58%</td>
+              <td>106,381,335,994</td>
+            </tr>
+            <tr>
+              <td>Solana</td>
+              <td>$224.10</td>
+              <td>0.68%</td>
+              <td>5.87 %</td>
+              <td>4.58%</td>
+              <td>106,381,335,994</td>
+            </tr>
+            <tr>
+              <td>Solana</td>
+              <td>$224.10</td>
+              <td>0.68%</td>
+              <td>5.87 %</td>
+              <td>4.58%</td>
+              <td>106,381,335,994</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+      <div class="table-footer">
+        <div class="rowscounter">Showing 1 - 100 out of 10283</div>
+        <div class="pagination">loremipsum</div>
+        <div class="rowsselector">Show rows</div>
+      </div>
     </div>
+  </div>
 
+  <div class="cta content-section">
+    <div class="fluid-container">
+      <div class="ctamsg">
+        <h2>Stay on top of crypto. All the time, any time.</h3>
+          <p>Please keep me updated by email with the latest crypto news, research findings, reward programs,
+            event updates, coin listings and more information from CoinMarketCap.</p>
+      </div>
+      <div class="ctaimage">
+        <img src="assets/media/coins.webp" alt="Icons of top coins">
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

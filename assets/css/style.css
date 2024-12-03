@@ -1,0 +1,223 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.content-section {
+    padding: 10px 20px;
+}
+
+.fluid-container {
+    width: 100%;
+}
+
+/* Header Styles*/
+
+header {
+    background-color: azure;
+}
+
+header .fluid-container {
+    display: flex;
+    flex: 1;
+    gap: 30px;
+}
+
+header .fluid-container {
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+.menu ul {
+    display: flex;
+    padding-inline-start: 0;
+}
+
+.menu li {
+    list-style: none;
+    margin-inline-end: 20px;
+    font-weight: 600;
+}
+
+.profile-dropdown {
+    margin-left: auto;
+    position: relative
+}
+
+.profile-dropdown-btn {
+    display: flex;
+
+}
+
+div.menu-bars {
+    width: 60px;
+    background-color: #E8E8E8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 15px;
+    border-radius: 10px 0 0 10px;
+    z-index: 1;
+}
+
+.profile-dropdown-image {
+    background-color: #1B0942;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+ul.profile-menu {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 130px;
+    padding: 20px 10px 0px 15px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 2px 4px 1px #00000024;
+    display: none;
+}
+
+ul.profile-menu.active {
+    display: initial;
+}
+
+ul.profile-menu li {
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+ul.profile-menu li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+ul.profile-menu li a i {
+    margin-right: 10px;
+}
+
+/* END Header Styles */
+
+/* Main Content Styles */
+
+.main-content {
+    background-color: #f4f4f4;
+    padding-bottom: 30px;
+}
+
+.main-content .fluid-container .heading-cryptototal {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+}
+
+div.heading-cryptototal :is(h1, p) {
+    margin-block-start: 0;
+}
+
+/* Table Styles */
+
+table {
+    border-collapse: collapse;
+}
+
+table :is(th, td) {
+    padding: 10px 0;
+}
+
+table thead>tr th:first-child,
+table tbody tr td:first-child {
+    text-align: left;
+}
+
+table thead>tr th:not(:first-child),
+table tbody tr td:not(:first-child) {
+    text-align: right;
+}
+
+table tr {
+    border-bottom: 1px #E8E8E8 solid;
+}
+
+.table-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 20px;
+}
+
+.table-footer>* {
+    flex: 1;
+}
+
+.table-footer .pagination {
+    text-align: center;
+}
+
+.table-footer .rowsselector {
+    text-align: right;
+}
+
+/* END Main Content Styles */
+
+/* CTA Stles */
+
+.cta {
+    background-color: #E5E5EA;
+}
+
+.cta .fluid-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.ctamsg {
+    order: 2;
+    max-width: 700px;
+    width: 100%;
+}
+
+.cta h2 {
+    font-size: 32px;
+}
+
+.cta p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.cta .ctaimage {
+    text-align: center;
+    order: 1;
+}
+
+.cta img {
+    max-width: 200px;
+    width: 100%;
+}
+
+/* END CTA Styles */
