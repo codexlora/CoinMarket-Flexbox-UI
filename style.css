@@ -53,6 +53,50 @@ div.heading-cryptototal :is(h1, p) {
     margin-block-start: 0;
 }
 
+/* Table Styles */
+
+table  {
+    border-collapse: collapse;
+}
+
+table :is(th,td){
+    padding: 10px 0;
+}
+
+table thead > tr th:first-child,
+table tbody tr td:first-child{
+    text-align: left;
+}
+
+table thead > tr th:not(:first-child),
+table tbody tr td:not(:first-child){
+    text-align: right;
+}
+
+table tr {
+    border-bottom: 1px #E8E8E8 solid;
+}
+
+.table-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 20px;
+}
+
+.table-footer > *{
+    flex: 1;
+}
+
+.table-footer .pagination{
+    text-align: center;
+}
+
+.table-footer .rowsselector{
+    text-align: right;
+}
+
+/* End Table Styles */
+
 .cta {
     background-color: #E5E5EA;
 }
