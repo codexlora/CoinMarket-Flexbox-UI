@@ -180,12 +180,37 @@ table tr {
     text-align: right;
 }
 
+.token-name{
+    display: flex;
+}
+
+.token-name img{
+    max-width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.token-name > div {
+    display: flex;
+    align-items: center;
+}
+
+.token-name div span{
+    margin-right: 5px;
+}
+
+.token-name div .symboltoken {
+    color: grey;
+}
+
+
 /* END Main Content Styles */
 
 /* CTA Stles */
 
 .cta {
     background-color: #E5E5EA;
+    padding: 30px 20px;
 }
 
 .cta .fluid-container {
